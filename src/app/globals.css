@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #eceeea;
+  --color-paper-2: #e2e5df;
+  --color-ink: #14171a;
+  --color-ink-2: #4a5057;
+  --color-rule: #c3c8c0;
+  --color-blue: #2f5fd0;
+  --color-green: #17804d;
+  --color-yellow: #f2b01e;
+  --color-yellow-ink: #8a5f00;
+  --color-red: #d9453a;
+  --color-panel: #0f1113;
+  --color-panel-2: #1a1e22;
+  --color-panel-line: #2a3036;
+  --color-amber: #f7b928;
+  --color-ok: #2f8f5b;
+  --color-fault: #d9453a;
+  --font-sans: "Archivo Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  font-stretch: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-blue);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.on-dark :focus-visible {
+  outline-color: var(--color-amber);
+}
+
+/* Titulares: la variante condensada del mismo tipo, como rótulo industrial */
+.display {
+  font-stretch: 68%;
+  font-weight: 800;
+  letter-spacing: -0.005em;
+  line-height: 0.94;
+  text-wrap: balance;
+}
+
+.title {
+  font-stretch: 78%;
+  font-weight: 750;
+  letter-spacing: 0;
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+}
+
+.prose-measure {
+  max-width: 62ch;
+}
+
+/* Rejilla de plano: solo en el fondo del héroe */
+.blueprint-grid {
+  background-image:
+    linear-gradient(to right, rgb(47 95 208 / 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(47 95 208 / 0.07) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Papel térmico */
+.thermal {
+  background: #fbfbf8;
+  color: #111;
+  font-family: var(--font-mono);
+  box-shadow: 0 1px 0 rgb(0 0 0 / 0.08);
+}
+
+.thermal-edge {
+  background:
+    linear-gradient(135deg, #fbfbf8 50%, transparent 50%) 0 0 / 10px 6px repeat-x,
+    linear-gradient(225deg, #fbfbf8 50%, transparent 50%) 0 0 / 10px 6px repeat-x;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
