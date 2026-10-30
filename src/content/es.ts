@@ -268,32 +268,21 @@ export const es = {
     ],
   },
   ai: {
-    title: "AI-Augmented Development",
-    lead: "Uso la IA como apoyo durante el desarrollo. No es mi especialidad y no la presento como tal.",
+    title: "",
+    lead: "",
     blocks: [
       {
-        title: "En la universidad",
-        text: "Usé IA con cámaras para identificar productos defectuosos en bandas, como plátanos y botellas rotas. Con más investigación, el sistema mejoró al usar más umbrales y, en algunos casos, sensores de temperatura.",
+        title: "",
+        text: "",
       },
       {
-        title: "Dentro de un producto",
-        text: "En la app móvil de Warden integré un chat con un modelo generativo de Google (Gemini) como asistente dentro de la app. Fue en 2024 y es una integración sencilla.",
+        title: "",
+        text: "",
       },
-      {
-        title: "Durante el desarrollo",
-        text: "Uso asistentes de IA como apoyo en mis proyectos. Yo decido la arquitectura; la IA me ayuda a escribir y a explorar alternativas.",
-      },
-      {
-        title: "Donde no la usé",
-        text: "El asistente de ayuda de la plataforma de formulación es un árbol de decisión que corre en el navegador, sin IA ni APIs externas. Sus respuestas son siempre las mismas.",
-      },
-      {
-        title: "Este sitio",
-        text: "Lo construí con asistencia de IA (Claude), a partir de mis repositorios y de lo que quiero comunicar. Todo lo que dice sale de mi código, y nada está inventado.",
-      },
+      
     ],
-    note: "No soy investigador de IA ni busco aparentar experiencia que no tengo.",
-    more: "Leer la sección completa",
+    note: "",
+    more: "",
   },
   about: {
     title: "Sobre mí",
